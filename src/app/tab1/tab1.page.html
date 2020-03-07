@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Express it {{toExpressExpressionName}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-button expand="full" [disabled]="disableCameraBtn" (click)="captureImage()">Capture Image</ion-button>
+    <ion-button expand="full" [disabled]="disableDetectBtn" (click)="detectExpressionsAndDraw()">Detect Expression(s)</ion-button>
+    <ion-button expand="full" [disabled]="disableNextExpressionBtn" (click)="getRandomExpressionName()">{{nextBtnText}}</ion-button>
+
+    <ion-card class="">
+      <ion-card-content id="container">
+        <img #image id="image" [src]="myImage" alt="" />
+        <canvas #canvas id="canvas"></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="" id="score_panel">
+        <ion-card-content >
+          Score goes here...
+        </ion-card-content>
+    </ion-card>
+    
+</ion-content>

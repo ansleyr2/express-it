@@ -1,0 +1,46 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+/*
+#container {
+  // width: 100vw;
+  // height: 100vh;
+  max-height: 35vh;
+  width: 100%;
+  position: relative;
+}
+#image,
+#canvas {
+  // width: 100%;
+  // height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#canvas {
+  z-index: 10;
+}*/
+
+#canvas {
+  // width: 100%;
+  // height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#score_panel{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.red-result-toast{
+  background-color: red !important;
+}
+
+.green-result-toast{
+  background-color: green !important;
+}

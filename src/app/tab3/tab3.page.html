@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Three
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <button (click)="captureImage()">Capture image</button>
+
+  <div id="container">
+    <!-- <img #my_image id="image" [src]="myImage" /> -->
+    <video #video id="my_image" autoplay muted  (play)="playHandler()"></video>
+    <canvas #canvas id="canvas"></canvas>
+
+    <img [src]="capturedImage" /> 
+  </div>
+
+</ion-content>
